@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+@import 'reset', 'mixin';
+
+
+body {
+    background-color:black;
+}
+
+.allWrap {
+    .headerFont {
+        color:#f3f3f3;
+    }
+    .topHeader {
+        position:fixed;
+        left:0;
+        top:0;
+        right:0;
+        height:48px;
+        // flex:0;
+        
+        
+        
+        .topManu {//레딧 높이 알기가 어려움 48px이 header의 다른 클래스에 들어가있는거 아닌가 하위요소가 아니라?
+            display:inline-flex;
+            height:48px;
+            // flex-direction:row;
+            // flex-grow:1;
+            background-color:rgb(36, 35, 35);
+            border-bottom:1px solid #474747;
+            padding:0 10px;
+            
+            .topLogo {
+                display:flex;
+                
+                align-items:center;
+                .logo {
+                    width:30px;
+                    height:30px;
+                    @include circle2(25px, #dcf551);
+                }
+                strong {
+                    
+                    margin:0 10px;
+                }
+            }
+            .searchBar {
+                flex-grow:1;
+
+            }
+        }
+    }
+}
+
+// .allWrap {
+//     .topHeader {
+
+//     }
+// }

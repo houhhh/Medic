@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-flexTest</title>
+    <style>
+        .allWrap {
+
+        }
+        .allWrap .top {
+            display:inline-flex;
+            background-color:#646464;
+            flex-direction:row;
+            flex-grow:1;
+
+        }
+
+        .allWrap .top .logoIcon {
+            background-color:red;
+            display:block;
+            height:30px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="allWrap">
+        <div class="top">
+            <span class="logoIcon"></span>
+            <strong>BRAND</strong>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
