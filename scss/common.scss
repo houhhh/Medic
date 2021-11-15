@@ -51,9 +51,9 @@ body {
                 
                 .btnCustom {
                     background-color:#131313;
-                    height:25px;
                     width:90px;
                     margin:0 15px;
+                    padding:5px 5px;
                     display:flex;
                     align-items:center;
                     @include radius(2px);
@@ -76,6 +76,7 @@ body {
                 }
             }
             .searchBar {
+                display:flex;
                 .searchBar {
                     flex-grow:1;
                     background-color:#dcf551;
